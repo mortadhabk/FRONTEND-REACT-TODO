@@ -8,7 +8,21 @@ import Header from "./component/header/Header";
 function App() {
   return (
     <div className="App">
-     
+      <Router>
+        <Header />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route exact path="/login/">
+            <Login />
+          </Route>
+          <Route exact path="/register/">
+            <Register />
+          </Route>
+          <Route exact path="/:id" component={Task} />
+        </Switch>
+      </Router>
     </div>
   );
 }
