@@ -7,7 +7,7 @@ import {
 
 
 export const loadLogin = (values) => {
-  console.log("action : " + values)
+
   return {
     type: LOGIN,
     payload: values,

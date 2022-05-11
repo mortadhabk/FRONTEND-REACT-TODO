@@ -5,7 +5,6 @@ export const useForm = (callback, initialState = {}) => {
 
   const onChange = (event) => {
     setValues({ ...values, [event.target.name]: event.target.value });
-    console.log("event onchange" + event);
   };
 
   const onSubmit = (event) => {

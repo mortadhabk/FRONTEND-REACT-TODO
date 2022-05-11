@@ -31,7 +31,7 @@ function Task(props) {
       }
 
     const [items, setItem] = useState();
-    console.log(props.match.params.id)
+
     const [miseajour , setmiseajour] = useState(1);
 
     //send a request to receive task 
